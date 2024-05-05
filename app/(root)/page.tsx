@@ -14,7 +14,7 @@ export default function Home() {
             </h1>
             <p className="p-regular-20 md:p-regular-24">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-              ducimus!
+              ducimus! Lorem Lorem
             </p>
             <Button size="lg" asChild className="button w-full sm:w-fit">
               <Link href="#events">Explore Now</Link>
