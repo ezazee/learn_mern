@@ -10,6 +10,7 @@ import { handleError } from "@/lib/utils";
 
 import { CreateUserParams, UpdateUserParams } from "@/types";
 
+// Create User
 export async function createUser(user: CreateUserParams) {
   try {
     await connectToDatabase();
@@ -20,6 +21,8 @@ export async function createUser(user: CreateUserParams) {
     handleError(error);
   }
 }
+
+// Get User By ID
 
 export async function getUserById(userId: string) {
   try {
@@ -33,6 +36,8 @@ export async function getUserById(userId: string) {
     handleError(error);
   }
 }
+
+// Update User
 
 export async function updateUser(clerkId: string, user: UpdateUserParams) {
   try {
@@ -48,6 +53,9 @@ export async function updateUser(clerkId: string, user: UpdateUserParams) {
     handleError(error);
   }
 }
+
+
+// Deleted User
 
 export async function deleteUser(clerkId: string) {
   try {
